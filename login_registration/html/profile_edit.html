@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="conainer-pr">
+      <form action="../php/logout.php" method="POST">
+      <input class="logoutBtn" type="submit" placeholder="Logout" value="Logout" style="float:right;">
+    </form>
+    <h1 class="txt-welc">Welcome to your profile!</h1>
+ 
+    <hr>
+    <form class="profile" action="../php/insert_profile_update.php" method="POST">
+        <div class="container-profile">
+           
+          <h1 class="reg-txt">Edite your profile</h1>
+       <hr>
+          <div class="edit-form">
+            <div class="field">
+           <input type="text" placeholder="Enter Full Name" name="name" id="name" >
+          <i class='far fa-user' style="margin-left:770px;"></i>       
+      </div>
+          <div class="field">
+         <input type="text" placeholder="Enter Last Name" name="lastNmae" id="lastName" >
+          <i class='far fa-user'style="margin-left:770px;"></i>
+        </div>
+       
+        <div class="field">
+        <input type="date" id="send" oninput="result.value=send.value">
+         <input type="text" id="result" name="birthDate" placeholder="  Your Date Of Birth">
+         <i class='fas fa-info'style="margin-left:770px;"></i>
+        </div>
+          <div class="field">
+          <input type="text" placeholder="Enter Email" name="email" id="email" >
+         <i class='far fa-envelope' style="margin-left:770px;"></i>
+          </div>
+          <div class="field">
+      
+         <input type="text" placeholder="Enter home address" name="address" id="address" >
+         <i class='fas fa-house-user'style="margin-left:770px;"></i>
+          </div>
+          <div class="field">
+               <input type="text" placeholder="Phone number" name="phone" id="phone" >
+         <i class='fas fa-phone-alt' style="margin-left:770px;"></i>
+        </div>
+          <div class="field">
+               <input type="password" placeholder="Enter Your New Password" name="psw" id="psw" >
+          <i class="fas fa-lock"style="margin-left:770px;"></i>
+        </div>
+          <div class="field">
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" >
+          <i class="fas fa-lock"style="margin-left:770px;"></i>
+        </div>
+        <input class="submitBnt" type="submit" name ="update_profile"value="Submit">
+         
+        </div>
+        </div>
+        
+      </form> 
+      <div class="footer"style="position: relative;">    &copy; Made by Mara Kraukle</div>
+    
+    </div>
+    </div>
+</body>
+</html>

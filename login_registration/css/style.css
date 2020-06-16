@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+body{
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+   
+}
+a{
+  text-decoration:none;
+  color:#444444;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color:#102059;
+   
+}
+.white-panel{
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+   
+   
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:#B8B8B8;
+}
+.login-reg-panel #label-login, 
+.login-reg-panel #label-register{
+     
+    max-width: 150px;
+    width: 100%;
+    border: 1px solid #25a5fa;
+    background-color: #08053b;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 12px;
+    transition: transform 80ms ease-in;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login-reg-panel #label-login:hover, 
+.login-reg-panel #label-register:hover{
+    background-color: #25a5fa;
+}
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+    
+}
+.right-log{
+    right:50px !important;
+}
+
+.login-show, 
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0 !important;
+    transition:0.3s ease-in-out;
+    color:#242424;
+    text-align:left;
+    padding:80px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9 !important;
+}
+.login-show input[type="text"], .login-show input[type="password"]{
+margin: 15px 0;
+}
+.login-show input[type="text"], .login-show input[type="password"], 
+.register-show input[type="text"],
+ .register-show input[type="password"]{
+    width: 100%;
+    outline: none;
+    border: none;
+   
+    overflow: hidden;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    background: none;
+    padding-right: 50px;
+    font-size: 18px;
+    display: block;
+    padding: 10px 30px;
+    height: 100%;
+}
+
+
+.btn-login , .btn-signup, 
+.forgot-btn-submit,
+ .submitBnt,
+ .logoutBtn {
+    font-size: 12px;
+    max-width: 150px;
+    border: 1px solid #fc9826;
+    background-color: #fc9826;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    float:left;
+    transition: transform 80ms ease-in;
+    margin-top: 15px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.login-show input[type="button"]:hover, .btn-signup:hover, 
+.registerbtn:hover, .forgot-btn-submit:hover ,
+.submitBnt:hover,.logoutBtn:hover
+
+{
+    background-color: #f2b438;
+
+}
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+
+
+ a{
+  text-decoration:none;
+  color:#eaeaea;
+} 
+
+
+.txt-login {
+    font-family: "Candara";
+    font-weight: 350;
+    margin-right: 180px;
+    color:#434247;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.txt-login:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #33a9e8;
+}
+.txt-slider{
+    font-family: "Candara";
+    font-weight: 350;
+    color:white;
+    display: inline-block;
+    padding-bottom: 25px;
+    position: relative;
+}
+.txt-slider::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #33a9e8;
+}
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+   
+}
+   .field{
+ display: flex; 
+
+}  
+
+input:focus + .far {
+    color: #1b9bd1;
+}
+
+input:focus + .fa {
+    color: #1b9bd1;
+}
+
+input:focus + .fas {
+    color: #1b9bd1;
+}
+input:focus + .far {
+    color: #1b9bd1;
+}
+
+.fa{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 25px;
+    color: #7e8594;
+}
+
+.fas{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 25px;
+    color: #7e8594; 
+}
+
+.far{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: 25px;
+    color: #7e8594; 
+}
+
+   
+ .forgot{
+    color: grey;
+    position: relative;
+     float: right;
+     margin-top: 15px;
+    }
+
+    .forgot:hover{
+     color:blue;   
+    }
+/* footer style */
+.footer{
+    color:gray;
+    margin-top: 50px;
+ 
+	text-align: center;
+	
+	height:50px;
+	width:100%;
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	padding-top:20px;
+}
+/* forgot password style */
+.txt-forgotpassword{
+    text-align:center ;
+
+}
+.form-container-forgot{
+display: flex;
+width: 100%;
+justify-content:center;
+align-items:center;
+height: 90%;
+
+}
+
+.form-forgot{
+padding: 15px 20px;
+width: 40%;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.forgot-btn-submit{
+margin-left: 150px;
+margin-top: 8px;
+
+
+}
+.form-forgot-box{
+    padding-left: 30px;
+    width: 100%;
+}
+/* full registration page style */
+.container-fullreg{
+    margin-right: 180px;
+    margin-left: 180px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    padding: 16px;
+    background-color: white;
+
+}
+.reg-txt{
+    text-align: center;
+    letter-spacing: 3px;
+}
+.wrap-form-frgt{
+background-color: #13094f;
+}
+.reg-form{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.registerbtn{
+    margin-left: 140px;
+    border: 1px solid #fc9826;
+    background-color: #fc9826;
+    color: #FFFFFF;
+    font-size: 12px;
+    max-width: 150px;
+    border: 1px solid #fc9826;
+    background-color: #fc9826;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: transform 80ms ease-in;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin-bottom: 10px;
+}
+
+
+
+.aldy{
+    color:white;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.aldy:hover{
+    color: #f7f3bc;
+}
+.reg-form-main{
+    background-color: #13094f;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    
+}
+/* edit profile style */
+.txt-welc{
+color: #fadf73;
+font-family:"MV Boli" ;
+text-align: center;
+font-size-adjust: 0.7;
+}
+.profile{
+background-color: #fadf73;
+padding-bottom: 50px
+}
+.container-profile{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.conainer-pr{
+ 
+    background-color: #13094f;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.submitBnt{
+    margin-left: 300px;
+    margin-top: 15px;
+    float: none;
+}
+ 
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    outline: none;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    background: none;
+    padding-right: 50px;
+    font-size: 18px;
+   
+} 

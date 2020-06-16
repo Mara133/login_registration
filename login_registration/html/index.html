@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign in And Sign up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </link>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+    </link>
+</head>
+
+<body style=" background-image: url(../img/sfw_fixed_01-29-2011-223.jpg);">
+
+    <div class="login-reg-panel">
+		<div class="login-info-box">
+          
+			<h1  class="txt-slider">Have an account?</h1>
+			<p style=" color: white;">Login with your personal info.</p>
+			<label id="label-register" for="log-reg-show">LOGIN</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h1 class="txt-slider">Don't have an account?</h1>
+			<p style=" color: white;">Click here bellow the button and register!</p>
+			<label style="margin-top: 30px !important;" id="label-login" for="log-login-show">SIGN UP</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+			
+		<div class="white-panel">
+			<div class="login-show">
+                <form action="../php/login.php" method="POST">
+                  
+                <h1 class="txt-login">Login</h1>
+                    <div class="field">
+                 <input type="text"name="email" placeholder="Email" required>
+         
+                <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="field">
+                  <input  type="password" name="psw" placeholder="Password" required> 
+                 <i class="fas fa-lock"></i>
+               
+                    </div>
+				<input class="btn-login" name="login-submit" type="submit" value="Login">
+                <a class="forgot" href="forgotpass.html">Forgot?</a>
+                </form>
+            </div>
+            <div class="register-show">
+                <form action="../php/sign_up.php" method="POST" >
+                
+                <h1 class="txt-login" style="margin-right: 150px !important;">Sign Up</h1>
+                <div class="field">
+                 <input type="text" name="firstName" placeholder="First Name" required>
+                <i class='far fa-user'></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                   <i class='far fa-user'></i>
+                   </div>
+              <div class="field">
+            <input type="text" name="email"placeholder="Email" required>
+                <i class="far fa-envelope"></i>
+                </div>
+                <div class="field">
+             <input type="password" name="psw" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+           <input class="btn-signup" name="signup-submit"type="submit" value="SIGN UP">
+            </form>
+			</div>
+		</div>
+	</div>
+
+        <script src="../js/main.js"></script>
+        <div class="footer">    &copy; Made by Mara Kraukle</div>
+    
+    </div>
+</body>
+
+</html>
